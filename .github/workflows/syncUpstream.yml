@@ -2,7 +2,7 @@ name: 'Upstream Sync'
 
 on:
   schedule:
-    - cron:  '0 5 * * *'    # 每天北京时间 15:00 执行 (UTC 7:00)
+    - cron:  '0 */12 * * *'    # 每 12 小时同步一次
   workflow_dispatch:      # 允许手动点击按钮触发
 
 jobs:
